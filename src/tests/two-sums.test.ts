@@ -1,4 +1,4 @@
-import { twoSum } from './two-sums';
+import { twoSum } from '../../src/week-1-strings/two-sums';
 
 describe('Two Sum', () => {
   test('basic case', () => {
