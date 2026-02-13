@@ -23,7 +23,7 @@ export function twoSum(nums: number[], target: number): number[] {
         const complement = target - nums[i];
         if(complements.has(complement)) 
         return [complements.get(complement)!,i];
-
+// it is important to remove the above line where undefined is handled with ! operator, because if the complement is not found in the map, it will return undefined and the code will throw an error when trying to access the index. By using the ! operator, we are asserting that the complement will always be found in the map, which is not guaranteed. Instead, we should handle the case where the complement is not found by returning an empty array or throwing an error.
         complements.set(nums[i],i);
 
     }
