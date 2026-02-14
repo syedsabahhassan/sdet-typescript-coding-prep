@@ -14,7 +14,8 @@ export function countSegments(s: string): number {
 
     }
 
-
     return countOfSegments;
+
+    // “I scan the string once. A segment begins when I see a non-space character that either is at index 0 or follows a space. I count these starts. This runs in O(n) time and O(1) space.”
 
 };

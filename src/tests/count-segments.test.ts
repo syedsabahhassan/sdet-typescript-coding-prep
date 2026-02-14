@@ -13,4 +13,7 @@ describe('Count Segments in a sentence or a string',()=>{
     test('Case 3',()=>{
         expect(countSegments("Hello")).toBe(1);
     })
+    test('Case 4',()=>{
+        expect(countSegments(" Bye")).toBe(1);
+    });
 })
