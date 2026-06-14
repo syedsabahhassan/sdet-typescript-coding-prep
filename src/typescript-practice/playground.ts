@@ -6,4 +6,4 @@ const exampleFrequencyMap= function exampleFrequencyMap(){
 }
 
 
-
+exampleFrequencyMap();

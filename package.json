@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "build": "tsc",
     "playground": "tsx src/typescript-practice/playground.ts",
-    "start": "node dist/typescript-practice/playground.js",
-    "test": "jest"
+    "start": "node dist/typescript-practice/playground.js"
   },
   "keywords": [],
   "author": "Syed Sabah Hassan",
