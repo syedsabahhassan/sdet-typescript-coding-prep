@@ -9,6 +9,9 @@ describe('Count the number of valid words in a sentence', () => {
   test('should return 0 for an empty string', () => {
     expect(countValidWords('!this  1-s b8d!')).toEqual(4);
   });
+  test('should return 0 for a string with only spaces', () => {
+    expect(countValidWords('   ')).toEqual(0);
+  });
   
 
 });
@@ -21,3 +24,4 @@ describe('Count the number of valid words in a sentence', () => {
     expect(countValidWords('   ')).toBe(0);
     expect(countValidWords('a b c d e f g h i j k l m n o p q r s t u v w x y z')).toBe(26);
  */
+
